@@ -3,9 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>❤</title>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" href="css/index.css">
+        <script src="./js/jquery-2.0.3.min.js"></script>
     </head>
     <body>
+        <div id="div_btn_inner"> <!-- 按钮部分内层，用于定位 -->
+            <div class='div_music_tips'></div>
+            <div class="div_btn" id="div_music" onclick="music_switch()"> <!-- 音乐按钮部分 -->
+                <img id='img_music' src='./img/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'> 
+                <audio id="audio_music" autoplay="autoplay" src="./music/loveu.mp3"  loop="loop">
+                    <source type="audio/mpeg"/>
+                    <!-- 您的浏览器不支持播放音乐 -->
+                </audio>
+            </div>
+        </div>
         <div class="textCon">
                 <div class="words">亲爱的,今天是认识你的第</div>
                 <div class="days">
